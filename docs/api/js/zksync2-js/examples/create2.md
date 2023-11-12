@@ -25,7 +25,7 @@ import { Provider, types, Wallet, ContractFactory } from "zksync2-js";
 import { ethers, Contract, Typed } from "ethers";
 
 const provider = Provider.getDefaultProvider(types.Network.Goerli);
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const PRIVATE_KEY = process.env.PRIVATE_KEY; // Ensure to set PRIVATE_KEY in your environment variables
 const wallet = new Wallet(PRIVATE_KEY, provider);
 
 async function main() {
